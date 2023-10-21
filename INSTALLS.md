@@ -10,20 +10,25 @@ The rest can be done in variable order, depending on how much you'd like to depe
 
 ## Essentials
 
-### Install Homebrew (`brew`)
+### Install [Homebrew](https://brew.sh) (aka `brew`)
 
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+### Install [`pyenv`](https://github.com/pyenv/pyenv)[^brew-pyenv-note]
 
-### Install `pyenv` [^1]
-
-`brew install pyenv`  
+```sh
+brew install pyenv
+```  
 **OR**  
-`curl https://pyenv.run | bash`
+```sh
+curl https://pyenv.run | bash
+```
 
-### Install `nvm`
+### Install [`nvm`](https://nvm.sh)
 
-Run the install script:[^2]  
+Run the install script:[^nvm-shell-note]  
 ```sh
 PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'
 ```
@@ -37,7 +42,7 @@ fi
 ```  
 And pull the .nvmfunc calls file to your local home directory: [.nvmfunc](.nvmfunc)  
 
-### Install VSCode
+### Install [VSCode](https://code.visualstudio.com/)
 
 To use the GUI installer:  
 https://code.visualstudio.com/Download  
@@ -45,7 +50,7 @@ https://code.visualstudio.com/Download
 Download versions of the app directly:  
 [Get latest Intel-chip version](https://update.code.visualstudio.com/latest/darwin/stable)  
 or  
-[Get latest Apple Silicon version](https://update.code.visualstudio.com/latest/darwin-arm64/stable)
+[Get latest Apple Silicon version](https://update.code.visualstudio.com/latest/darwin-arm64/stable)  
 
 ### Install [Docker](https://www.docker.com/)
 
@@ -63,14 +68,24 @@ sudo hdiutil detach /Volumes/Docker
 ## Nice to haves
 
 If you want them all:  
-`brew install --cask gimp rectangle maccy dbeaver-community`  
+```sh
+brew install --cask gimp rectangle maccy dbeaver-community
+```  
 
 Or a-la-carte:  
-`brew install --cask gimp`  
-`brew install --cask rectangle`  
-`brew install --cask maccy`  
-`brew install --cask dbeaver-community`  
+```sh
+brew install --cask gimp
+```  
+```sh
+brew install --cask rectangle
+```  
+```sh
+brew install --cask maccy
+```  
+```sh
+brew install --cask dbeaver-community
+```  
 
-[^1]: If you use Homebrew to manage pyenv the versions available to pyenv are limited by the Homebrew update cycle
+[^brew-pyenv-note]: If you use Homebrew to manage pyenv the versions available to pyenv are limited by the Homebrew update cycle
 
-[^2]: Setting PROFILE in the call to installation script to avoid it automatically writing to shell config
+[^nvm-shell-note]: Setting PROFILE in the call to installation script to avoid it automatically writing to shell config
