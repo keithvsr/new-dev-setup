@@ -47,6 +47,19 @@ Download versions of the app directly:
 or  
 [Get latest Apple Silicon version](https://update.code.visualstudio.com/latest/darwin-arm64/stable)
 
+### Install [Docker](https://www.docker.com/)
+
+Download the installer depending on your chip:  
+- [Docker Desktop for Apple silicon](https://desktop.docker.com/mac/main/arm64/Docker.dmg)
+- [Docker Desktop for Intel](https://desktop.docker.com/mac/main/amd64/Docker.dmg)  
+
+Once dmg image file is downloaded, it can be opened to follow the usual 'copy to /Applications' flow or, there's this from the [docker docs](https://docs.docker.com/desktop/install/mac-install/#install-and-run-docker-desktop-on-mac):  
+```sh
+sudo hdiutil attach Docker.dmg
+sudo /Volumes/Docker/Docker.app/Contents/MacOS/install
+sudo hdiutil detach /Volumes/Docker
+```
+
 ## Nice to haves
 
 If you want them all:  
