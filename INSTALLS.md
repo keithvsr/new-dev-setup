@@ -88,6 +88,15 @@ it's also available on `brew` (may require additional dependencies):
 brew install docker
 ```
 
+### Install [BBEdit](https://www.barebones.com/products/bbedit/)
+
+Plaintext editor and notepad. Their tagline is "It doesn't suck" and it's correct  
+[Download here](https://www.barebones.com/products/bbedit/download.html)  
+**OR**  
+```sh
+brew install --cask bbedit
+```
+
 ## Nice to haves
 
 These include a database connection GUI (dbeaver), a real image processor (gimp), a solid clipboard manager (maccy), and a decent Mac OS window management system (maccy):  
