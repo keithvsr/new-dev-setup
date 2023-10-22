@@ -1,0 +1,16 @@
+# set nano as default editor for git commits
+export EDITOR=nano
+export VISUAL=nano
+
+# load the nvm functions if we've setup the file
+FILE="$HOME/.nvmfunc"
+if test -f "$FILE"; then
+    source $FILE
+fi
+
+# longer history easier to use
+alias hist="history 1"
+
+# make Home and End keys work in terminal
+bindkey	'\e[H'	beginning-of-line
+bindkey '\e[F'	end-of-line
