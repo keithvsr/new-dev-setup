@@ -99,7 +99,7 @@ brew install --cask bbedit
 
 ## Nice to haves
 
-These include a database connection GUI (dbeaver), a real image processor (gimp), a solid clipboard manager (maccy), and a decent Mac OS window management system (maccy):  
+These include a database connection GUI (dbeaver), a real image processor (gimp), a solid clipboard manager (maccy), and a decent Mac OS window management system (rectangle):  
 
 If you want them all:  
 ```sh
