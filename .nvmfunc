@@ -23,5 +23,5 @@ nvm() {
 
 npx() {
   lazy_load_nvm
-  npx @
+  npx $@
 }
