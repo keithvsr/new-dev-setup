@@ -49,6 +49,7 @@ ln -s /opt/homebrew/share/zsh/site-functions/_brew ~/.zsh/completion/_brew
 Recommended terminal replacement/emulation for Mac OS
 
 For a 'normal' installation download the [latest iTerm2](https://iterm2.com/downloads/stable/latest)
+
 **OR**
 
 ```sh
@@ -108,6 +109,7 @@ fi
 ```
 
 And pull the .nvmfunc calls file to your local home directory: [.nvmfunc](.nvmfunc)
+
 **OR**
 It has a warning-like Caveat in the installation logging so might not be recommended but:
 
@@ -120,10 +122,12 @@ brew install nvm
 To use the GUI installer:
 https://code.visualstudio.com/Download
 
+**OR**
+
 Download versions of the app directly:
-[Get latest Intel-chip version](https://update.code.visualstudio.com/latest/darwin/stable)
-or
-[Get latest Apple Silicon version](https://update.code.visualstudio.com/latest/darwin-arm64/stable)
+
+- [Get latest Apple Silicon version](https://update.code.visualstudio.com/latest/darwin-arm64/stable)
+- [Get latest Intel-chip version](https://update.code.visualstudio.com/latest/darwin/stable)
 
 ### Install [Docker](https://www.docker.com/)
 
@@ -157,6 +161,7 @@ brew install docker
 
 Plaintext editor and notepad. Their tagline is "It doesn't suck" and it's correct
 [Download here](https://www.barebones.com/products/bbedit/download.html)
+
 **OR**
 
 ```sh
