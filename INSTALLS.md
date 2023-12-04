@@ -211,6 +211,20 @@ For the server as well:
 brew install mysql
 ```
 
+### Install postgres
+
+Similar to `mysql` the recommendation is client only and using Docker or other containers to prototype the actual database.
+
+```sh
+brew install libpq
+```
+
+Or if you want the full server:
+
+```sh
+brew install postgresql
+```
+
 ## Nice to haves
 
 There are tons of available packages on homebrew worth checking out. Below's a small selection of what's been useful in the past. These include a database connection GUI (dbeaver), a real image processor (gimp), a solid clipboard manager (maccy), and a decent Mac OS window management system (rectangle):
@@ -238,6 +252,10 @@ brew install --cask maccy
 ```sh
 brew install --cask dbeaver-community
 ```
+
+# Next steps
+
+See further setup steps [here](FURTHER_SETUP.md)
 
 [^brew-pyenv-note]: If you use Homebrew to manage pyenv the versions available to pyenv are limited by the Homebrew update cycle
 [^nvm-shell-note]: Setting PROFILE in the call to installation script to avoid it automatically writing to shell config
