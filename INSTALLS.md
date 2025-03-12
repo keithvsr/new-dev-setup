@@ -90,32 +90,15 @@ Once you've installed a python version, don't forget (like I did recently 🤪) 
 pyenv global 3.11
 ```
 
-### Install [`nvm`](https://nvm.sh)
+### Install [`deno`](https://deno.land)
 
-Node version management via the command line that _might_ be worth the effort
-Run the install script:[^nvm-shell-note]
-
-```sh
-PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'
-```
-
-NVM can be _slow_ on shell startup so we customize the shell integration to lazy-load all its associated commands. Add the following to .zshrc:
+Newer more betterer JavaScript/TypeScript runtime with ability to import npm packages, run top-level async, and execute TS code without a compilation step. And that's really just scratching the surface on the quality of life improvements.
 
 ```sh
-FILE="$HOME/.nvmfunc"
-if test -f "$FILE"; then
-    source $FILE
-fi
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
-And pull the .nvmfunc calls file to your local home directory: [.nvmfunc](.nvmfunc)
-
-**OR**
-It has a warning-like Caveat in the installation logging so might not be recommended but:
-
-```sh
-brew install nvm
-```
+The beginning of the "Getting Started" documentation is here to refamiliarize yourself if need be: [deno installation](https://docs.deno.com/runtime/getting_started/installation)
 
 ### Install [VSCode](https://code.visualstudio.com/)
 
@@ -252,6 +235,38 @@ brew install --cask maccy
 ```sh
 brew install --cask dbeaver-community
 ```
+
+---
+
+*Note*: With the progression of JS runtimes like Bun (not included here but worth checking out) and [deno](#install-deno) I'm moving `nvm` to "nice to haves" as it, and it's slowdown headaches, may no longer be absolutely necessary for living life.
+
+### Install [`nvm`](https://nvm.sh)
+
+Node version management via the command line that _might_ be worth the effort
+Run the install script:[^nvm-shell-note]
+
+```sh
+PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'
+```
+
+NVM can be _slow_ on shell startup so we customize the shell integration to lazy-load all its associated commands. Add the following to .zshrc:
+
+```sh
+FILE="$HOME/.nvmfunc"
+if test -f "$FILE"; then
+    source $FILE
+fi
+```
+
+And pull the .nvmfunc calls file to your local home directory: [.nvmfunc](.nvmfunc)
+
+**OR**
+It has a warning-like Caveat in the installation logging so might not be recommended but:
+
+```sh
+brew install nvm
+```
+
 
 # Next steps
 
